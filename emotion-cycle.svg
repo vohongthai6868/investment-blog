@@ -1,0 +1,92 @@
+<svg viewBox="0 0 820 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Vòng lặp cảm xúc của nhà đầu tư</title>
+<desc id="desc">Biểu đồ đường mô tả tâm lý nhà đầu tư dao động theo giá: từ lạc quan, hưng phấn lên đến hưng cảm cực độ ở đỉnh (nơi phần lớn người mua), rồi lo lắng, phủ nhận, hoảng loạn xuống đầu hàng ở đáy (nơi phần lớn người bán), trước khi hồi phục thành hy vọng.</desc>
+<style>
+  :root { }
+  .bg { fill: #eef1ee; }
+  .surface { fill: #ffffff; }
+  .rule { stroke: #d5dbd3; }
+  .ink { fill: #1c2b32; }
+  .ink-soft { fill: #52625e; }
+  .ink-faint { fill: #7f8d88; }
+  .curve { stroke: #96662a; }
+  .area { fill: url(#areaGrad); }
+  .dot { fill: #96662a; stroke: #eef1ee; }
+  .warn-fill { fill: #a13d3d; }
+  .warn-stroke { stroke: #a13d3d; }
+  .warn-box { fill: #fdf1f0; stroke: #a13d3d; }
+  .label { font-family: "Source Sans 3", Arial, sans-serif; }
+  .mono { font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace; }
+
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #10161b; }
+    .surface { fill: #171f25; }
+    .rule { stroke: #2a343b; }
+    .ink { fill: #e7ece8; }
+    .ink-soft { fill: #a8b4ad; }
+    .ink-faint { fill: #78857f; }
+    .curve { stroke: #d7a862; }
+    .dot { fill: #d7a862; stroke: #10161b; }
+    .warn-fill { fill: #d3716f; }
+    .warn-stroke { stroke: #d3716f; }
+    .warn-box { fill: #241615; stroke: #d3716f; }
+  }
+</style>
+
+<defs>
+  <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#96662a" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#96662a" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" x="0" y="0" width="820" height="520"/>
+
+<text x="40" y="42" class="label ink" font-size="20" font-weight="700">Vòng lặp cảm xúc của nhà đầu tư</text>
+<text x="40" y="64" class="label ink-soft" font-size="13.5">Tâm lý dao động theo giá — và vì sao phần lớn người mua đúng lúc đỉnh, bán đúng lúc đáy</text>
+
+<line x1="40" y1="410" x2="780" y2="410" class="rule" stroke-width="1"/>
+<text x="780" y="430" text-anchor="end" class="mono ink-faint" font-size="11">THỜI GIAN →</text>
+<text x="40" y="96" class="mono ink-faint" font-size="11">GIÁ / CẢM XÚC ↑</text>
+
+<path class="area" d="M60,300 C93.3,300 126.7,230 160,230 C193.3,230 226.7,140 260,140 C286.7,140 313.3,70 340,70 C370,70 400,150 430,150 C456.7,150 483.3,230 510,230 C536.7,230 563.3,320 590,320 C616.7,320 643.3,390 670,390 C703.3,390 736.7,330 770,330 L770,410 L60,410 Z"/>
+
+<path fill="none" class="curve" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+  d="M60,300 C93.3,300 126.7,230 160,230 C193.3,230 226.7,140 260,140 C286.7,140 313.3,70 340,70 C370,70 400,150 430,150 C456.7,150 483.3,230 510,230 C536.7,230 563.3,320 590,320 C616.7,320 643.3,390 670,390 C703.3,390 736.7,330 770,330"/>
+
+<!-- Peak marker ring -->
+<circle cx="340" cy="70" r="11" fill="none" class="warn-stroke" stroke-width="1.5"/>
+<!-- Trough marker ring -->
+<circle cx="670" cy="390" r="11" fill="none" class="warn-stroke" stroke-width="1.5"/>
+
+<!-- markers -->
+<g class="mono ink-faint" font-size="11">
+  <circle cx="60" cy="300" r="5" class="dot" stroke-width="1.5"/><text x="60" y="325" text-anchor="middle">①</text>
+  <circle cx="160" cy="230" r="5" class="dot" stroke-width="1.5"/><text x="160" y="255" text-anchor="middle">②</text>
+  <circle cx="260" cy="140" r="5" class="dot" stroke-width="1.5"/><text x="260" y="165" text-anchor="middle">③</text>
+  <circle cx="340" cy="70" r="6" class="dot" stroke-width="2"/>
+  <circle cx="430" cy="150" r="5" class="dot" stroke-width="1.5"/><text x="430" y="175" text-anchor="middle">⑤</text>
+  <circle cx="510" cy="230" r="5" class="dot" stroke-width="1.5"/><text x="510" y="255" text-anchor="middle">⑥</text>
+  <circle cx="590" cy="320" r="5" class="dot" stroke-width="1.5"/><text x="590" y="345" text-anchor="middle">⑦</text>
+  <circle cx="670" cy="390" r="6" class="dot" stroke-width="2"/>
+  <circle cx="770" cy="330" r="5" class="dot" stroke-width="1.5"/><text x="770" y="355" text-anchor="middle">⑨</text>
+</g>
+
+<!-- legend -->
+<g class="label ink-soft" font-size="12.5">
+  <text x="40" y="452">① Lạc quan</text>
+  <text x="150" y="452">② Hưng phấn</text>
+  <text x="270" y="452">③ Phấn khích</text>
+  <text x="390" y="452" class="warn-fill">④ Hưng cảm cực độ</text>
+  <text x="40" y="476">⑤ Lo lắng</text>
+  <text x="150" y="476">⑥ Phủ nhận</text>
+  <text x="270" y="476">⑦ Hoảng loạn</text>
+  <text x="390" y="476" class="warn-fill">⑧ Đầu hàng</text>
+  <text x="540" y="476">⑨ Hy vọng (vòng mới)</text>
+</g>
+
+<line x1="40" y1="492" x2="780" y2="492" class="rule" stroke-width="1"/>
+<text x="40" y="510" class="label warn-fill" font-size="12.5">
+  <tspan font-weight="700">④ và ⑧ tô đỏ:</tspan> hai điểm mà phần lớn nhà đầu tư hành động sai thời điểm nhất — mua ở đỉnh, bán ở đáy.
+</text>
+</svg>
